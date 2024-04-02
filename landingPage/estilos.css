@@ -1,3 +1,4 @@
+/* CONFIGURACIÓN DEL CUERPO DE LA PÁGINA */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,35 +6,7 @@ body {
     background-color: #f8f9fa;
 }
 
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ff6b6b;
-}
-
+/* CONFIGURACIÓN DE LA SELECCIÓN INICIAL DE LA PÁGINA */
 .main-section {
     position: relative;
     text-align: center;
@@ -80,27 +53,29 @@ nav ul li a:hover {
     background-color: #f03e3e;
 }
 
+
+/* CONFIGURACIÓN DE LAS TARJETAS CREADAS CON MENSAJES CLAROS.  */
 .features {
     display: flex;
-    justify-content: space-between; /* Cambiado de space-around a space-between */
-    flex-wrap: nowrap; /* Evitar que las tarjetas se envuelvan */
+    justify-content: space-between; 
+    flex-wrap: nowrap; 
     padding: 50px 20px;
-    background-color: #f0f8ff; /* Color de fondo azul pastel */
+    background-color: #f0f8ff; 
 }
 
 .feature {
-    flex: 0 0 calc(30% - 30px); /* Ajustar el ancho de la tarjeta y restar el espacio entre ellas */
-    background-color: #add8e6; /* Color de fondo azul claro */
+    flex: 0 0 calc(30% - 30px); 
+    background-color: #add8e6; 
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-    text-align: center; /* Centrar el texto */
+    text-align: center;
 }
 
 .feature:first-child {
-    margin-right: 10px; /* Agregar margen derecho solo a las tarjetas que no son la primera */
+    margin-right: 10px;
 }
 
 .feature:hover {
@@ -108,9 +83,9 @@ nav ul li a:hover {
 }
 
 .feature img {
-    width: 100px; /* Reducir el tamaño de la imagen */
-    height: 100px; /* Reducir el tamaño de la imagen */
-    margin: 0 auto 20px; /* Centrar las imágenes verticalmente */
+    width: 100px; 
+    height: 100px; 
+    margin: 0 auto 20px;
     display: block;
 }
 
@@ -135,28 +110,28 @@ footer {
 }
 
 
-/* Media query para pantallas más pequeñas */
+/* MEDIA QUERY APLICADAS PARA PANTALLAS PEQUEÑAS */
 @media only screen and (max-width: 768px) {
     .features {
-        flex-direction: column; /* Las características se apilan una encima de la otra */
-        align-items: center; /* Centrar las características */
-        padding: 20px; /* Reducir el relleno */
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px; 
     }
     
     .feature {
-        width: 100%; /* Las características ocupan todo el ancho disponible */
-        margin-bottom: 20px; /* Agregar margen inferior */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 
     .overlay h1 {
-        font-size: 16px; /* Reducir el tamaño de fuente del título */
+        font-size: 16px; 
     }
 
     .overlay p {
-        display: none; /* Ocultar el párrafo */
+        display: none; 
     }
 
     .overlay button {
-        font-size: 12px; /* Reducir el tamaño de fuente del botón */
+        font-size: 12px; 
     }
 }
