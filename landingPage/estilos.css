@@ -1,144 +1,133 @@
-/* CONFIGURACIÓN DEL CUERPO DE LA PÁGINA */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif; /* Fuente predeterminada para el cuerpo del documento */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background-color: #f8f9fa; /* Color de fondo para todo el cuerpo */
 }
 
-/* CONFIGURACIÓN DE LA SELECCIÓN INICIAL DE LA PÁGINA */
 .main-section {
-    position: relative;
-    text-align: center;
+    position: relative; /* Posición relativa para permitir posicionar elementos hijos de manera absoluta */
+    text-align: center; /* Centra el texto dentro del main-section */
 }
 
 .background-img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Asegura que la imagen de fondo ocupe todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
 }
 
 .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black; 
-    background-color: rgba(173, 216, 230, 0.5); 
-    padding: 20px;
-    border-radius: 10px;
+    position: absolute; /* Posición absoluta para permitir superponer elementos */
+    top: 50%; /* Coloca el elemento en la mitad superior del contenedor padre */
+    left: 50%; /* Coloca el elemento en la mitad izquierda del contenedor padre */
+    transform: translate(-50%, -50%); /* Centra el elemento horizontal y verticalmente */
+    color: black; /* Color de texto */
+    background-color: rgba(173, 216, 230, 0.5); /* Color de fondo con transparencia */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .overlay h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 36px; /* Tamaño de fuente para el título principal */
+    margin-bottom: 20px; /* Margen inferior */
 }
 
 .overlay p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 18px; /* Tamaño de fuente para los párrafos */
+    margin-bottom: 30px; /* Margen inferior */
 }
 
 .overlay button {
-    padding: 10px 20px;
-    background-color: #ff6b6b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #ff6b6b; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
 }
 
 .overlay button:hover {
-    background-color: #f03e3e;
+    background-color: #f03e3e; /* Color de fondo del botón al pasar el ratón */
 }
 
-
-/* CONFIGURACIÓN DE LAS TARJETAS CREADAS CON MENSAJES CLAROS.  */
 .features {
-    display: flex;
-    justify-content: space-between; 
-    flex-wrap: nowrap; 
-    padding: 50px 20px;
-    background-color: #f0f8ff; 
+    padding: 50px 20px; /* Espaciado interno */
+    background-color: #f0f8ff; /* Color de fondo para la sección de características */
+    display: flex; /* Usa flexbox para organizar los elementos hijos */
+    justify-content: space-between; /* Distribuye uniformemente los elementos hijos */
 }
 
 .feature {
-    flex: 0 0 calc(30% - 30px); 
-    background-color: #add8e6; 
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-    text-align: center;
+    flex: 0 0 calc(30% - 30px); /* Define el tamaño flexible de las tarjetas */
+    background-color: #add8e6; /* Color de fondo de las tarjetas */
+    padding: 30px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: box-shadow 0.3s ease; /* Transición suave al pasar el ratón */
+    text-align: center; /* Centra el texto dentro de las tarjetas */
 }
 
 .feature:first-child {
-    margin-right: 10px;
+    margin-right: 10px; /* Margen derecho solo para la primera tarjeta */
 }
 
 .feature:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más grande al pasar el ratón */
 }
 
 .feature img {
-    width: 100px; 
-    height: 100px; 
-    margin: 0 auto 20px;
-    display: block;
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    margin: 0 auto 20px; /* Margen inferior automático */
+    display: block; /* Hace que la imagen sea un bloque para centrarla horizontalmente */
 }
 
 .feature h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiar la fuente */
+    font-size: 24px; /* Tamaño de fuente para los títulos de características */
+    color: #333; /* Color de texto */
+    margin-bottom: 10px; /* Margen inferior */
 }
 
-.feature p {
-    font-size: 16px;
-    color: #666;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiar la fuente */
+.main-title {
+    font-size: 24px; /* Tamaño de fuente para el título principal */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto */
+    text-align: center; /* Centra el texto del pie de página */
+    padding: 20px 0; /* Espaciado interno */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior */
+    width: 100%; /* Ancho completo */
 }
 
-
-/* MEDIA QUERY APLICADAS PARA PANTALLAS PEQUEÑAS */
 @media only screen and (max-width: 768px) {
     .features {
-        flex-direction: column; 
-        align-items: center;
-        padding: 20px; 
+        flex-direction: column; /* Cambia la dirección del flexbox a columna en dispositivos móviles */
+        align-items: center; /* Centra los elementos hijos en dispositivos móviles */
     }
     
     .feature {
-        width: 100%; 
-        margin-bottom: 20px; 
+        width: 100%; /* Ancho completo para las tarjetas en dispositivos móviles */
+        margin-bottom: 20px; /* Margen inferior */
     }
 
     .overlay h1 {
-        font-size: 16px; 
+        font-size: 16px; /* Tamaño de fuente más pequeño para el título principal en dispositivos móviles */
     }
 
     .overlay p {
-        display: none; 
+        display: none; /* Oculta los párrafos en dispositivos móviles */
     }
 
     .overlay button {
-        font-size: 12px; 
+        font-size: 16px; /* Tamaño de fuente más pequeño para el botón en dispositivos móviles */
     }
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 14px; /* Tamaño de fuente más grande */
-    padding: 8px 40px; /* Aumenta el espacio alrededor del texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del texto */
 }
