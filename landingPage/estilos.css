@@ -135,3 +135,10 @@ footer {
         font-size: 12px; 
     }
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px; /* Tamaño de fuente más grande */
+    padding: 8px 40px; /* Aumenta el espacio alrededor del texto */
+}

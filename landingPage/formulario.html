@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="estilos-formulario.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>¡Únete a nosotros!</h2>
+        <form id="registroForm">
+            <!-- Campos del formulario -->
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" required>
+            </div>
+            <div class="mb-3">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad" required>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" required>
+            </div>
+            <div class="mb-3">
+                <label for="contrasena" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="contrasena" required>
+            </div>
+            <div class="mb-3">
+                <label for="confirmarContrasena" class="form-label">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="confirmarContrasena" required>
+            </div>
+
+            <!-- Botones del formulario -->
+            <div class="buttons">
+                <!-- Botón para enviar el formulario -->
+                <button type="button" class="btn btn-info" id="enviarBtn">Enviar</button>
+                <!-- Botón para regresar a la página anterior -->
+                <a href="index.html" class="btn btn-secondary">Atrás</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

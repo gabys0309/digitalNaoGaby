@@ -1,0 +1,41 @@
+body {
+    padding: 50px; /* Agrega un relleno de 50px alrededor del cuerpo del documento */
+    margin: 0; /* Elimina el margen predeterminado */
+    font-family: Arial, sans-serif; /* Define la fuente del texto */
+    background-image: url('https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_960_720.jpg'); /* Establece una imagen de fondo */
+    background-size: cover; /* Escala la imagen de fondo para cubrir toda la ventana */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
+
+.container {
+    width: 40%; /* Establece el ancho del contenedor al 40% del ancho del padre */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background-color: rgba(0, 0, 255, 0.5); /* Establece un color de fondo azul con transparencia */
+    padding: 10px; /* Agrega un relleno de 10px alrededor del contenedor */
+    border-radius: 10px; /* Agrega bordes redondeados al contenedor */
+}
+
+h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 26px; /* Establece el tamaño de la fuente en 26px */
+    font-weight: bold; /* Establece el texto en negrita */
+    color: white; /* Establece el color del texto en blanco */
+}
+
+label {
+    font-size: 12px; /* Establece el tamaño de la fuente de las etiquetas en 12px */
+    font-family: 'Arial', sans-serif; /* Define la fuente de las etiquetas */
+    color: white; /* Establece el color del texto en blanco */
+}
+
+.buttons {
+    display: flex; /* Utiliza un modelo de caja flexible para los botones */
+    justify-content: space-between; /* Distribuye los botones uniformemente en el espacio disponible */
+}
+
+a.btn {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    font-size: 14px; /* Establece el tamaño de la fuente en 14px */
+    padding: 8px 40px; /* Agrega relleno alrededor del texto */
+}
